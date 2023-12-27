@@ -1,0 +1,16 @@
+@keyframes fall {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(100vh); }
+}
+
+.snowflake {
+    color: white;
+    opacity: 0.8;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    animation-name: fall;
+    animation-duration: 10s; /* Adjust duration for faster or slower falling */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
